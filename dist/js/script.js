@@ -69,10 +69,6 @@
                         iconanchor: [30,60]
                     }
                 }
-                // {56.003369  37.688171
-                //     address: "Galapagos, Ecuador",
-                //     html: "_address"
-                // }
             ],
             icon: {
                 image: "img/map-marker-blue-min.png",
