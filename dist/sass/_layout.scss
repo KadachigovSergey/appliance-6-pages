@@ -1,0 +1,170 @@
+//NAVE PAGE *************************************************************
+.breadcrumbs {
+  border-top: 1px solid $colorBorderLightGrey;
+  background: $colorWhite;
+  padding: 16px 0;
+  li {
+    a {
+      color: $colorDarkBlue;
+      -webkit-transition: .3s;
+      -moz-transition: .3s;
+      -ms-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      &:hover {
+        color: $colorBlue;
+      }
+    }
+    & + li {
+      padding-left: 0;
+      &:before {
+        content: "/";
+        color: $colorDarkBlue;
+        margin-right: 7px;
+      }
+    }
+    &:last-child {
+      color: $colorBorderLightGrey;
+    }
+  }
+}
+
+.sidebar {
+  @media(max-width: 1199px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    opacity: 0;
+    -webkit-transform: translateX(400px);
+    -moz-transform: translateX(400px);
+    -ms-transform: translateX(400px);
+    -o-transform: translateX(400px);
+    transform: translateX(400px);
+    z-index: 99;
+  }
+  &.open {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+  li {
+    background: $colorBlue;
+    color: $colorWhite;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 10px 21px 10px;
+    & + li {
+      margin-top: 20px;
+    }
+  }
+  span {
+    font-family: $fontRegular;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .sidebar-title {
+    font-family: $fontSemiBold;
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  .tell {
+    font-size: 22px;
+    line-height: 1.1;
+  }
+}
+
+.sidebar-btn {
+  display: none;
+  position: absolute;
+  top: -83px;
+  right: 21px;
+  font-size: 30px;
+  -webkit-transition: color .3s, transform .5s;
+  -moz-transition: color .3s, transform .5s;
+  -ms-transition: color .3s, transform .5s;
+  -o-transition: color .3s, transform .5s;
+  transition: color .3s, transform .5s;
+  color: $colorDarkBlue;
+  &.open {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+  &:hover {
+    color: $colorBlue;
+  }
+  &:active {
+
+  }
+  @media(max-width: 1199px) {
+    display: inline-block;
+  }
+}
+
+//TABLE START *************************************
+table {
+  th {
+    padding: 0 15px;
+    width: 33.333%;
+    text-align: center;
+    &:last-child {
+      text-align: right;
+    }
+    &:first-child {
+      text-align: left;
+    }
+  }
+  td {
+    font-size: 14px;
+    text-align: center;
+    &:last-child {
+      text-align: right;
+    }
+    &:first-child {
+      text-align: left;
+    }
+  }
+
+}
+
+//TABLE END ***************************************
+
+//NUBBER
+.number-page {
+  border: 1px solid #dedede;
+  background: $colorWhite;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  &:hover {
+    background: $colorRed;
+    border: 1px solid $colorRed;
+    color: $colorWhite;
+
+  }
+  &.active {
+    background: $colorBlue;
+    border: 1px solid $colorBlue;
+    color: $colorWhite;
+  }
+
+}

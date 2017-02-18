@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Appliance</title>
+</head>
+<body>
+<!--HEADER START-->
+<header>
+    <div class="container">
+
+        <a href="index.html" class="header-logo pull-left">
+            <img src="img/header-logo.png" alt="">
+        </a>
+        <div class="btn-mobile-menu">
+            <div class="btn-menu-wrap">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="header-text pull-right">
+            <ul class="header-contact list-inline">
+                <li class="header-tell"><a href="#"><span>786-655-2507</span></a></li>
+                <li class="header-map"><a href="#">Find us on map</a></li>
+            </ul>
+            <ul class="header-nav-menu list-inline">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services-page.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+</header>
+<!--HEADER END-->
+<!--MAIN START-->
+<main>
+    <!--BREADCRUMBS START-->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="list-inline">
+                <li><a href="index.html">Home</a></li>
+                <li><span>Contacts</span></li>
+            </ul>
+        </div>
+    </div>
+    <!--BREADCRUMBS END-->
+
+    <!--CONTACTS BLOCK START-->
+    <div class="contacts-wrap">
+        <div class="container">
+            <div class="title">
+                <span>Contacts us</span>
+            </div>
+            <div class="row">
+                <ul class="col-sm-4 col-xs-12 contact-wrap">
+                        <li><img src="img/all-hour-min.png" alt=""></li>
+                        <li class="px18">Tel: 786-655-2507</li>
+                        <li class="px18"><span class="col-blue">24 Hour:</span> 786-655-2507</li>
+                </ul>
+                <ul class="col-sm-4 col-xs-12 contact-wrap">
+                        <li><img src="img/map-marker-min.png" alt=""></li>
+                        <li><span class="col-blue">23, Groove Street</span> New York</li>
+                        <li><span class="col-blue">17, Park Avenue</span> New York</li>
+                        <li><span class="col-blue">86, Main Park street</span> New York</li>
+                </ul>
+                <ul class="col-sm-4 col-xs-12 contact-wrap">
+                        <li><img src="img/clock-min.png" alt=""></li>
+                        <li class="px18">09:00 AM - 06:00 PM</li>
+                        <li>( Mon - Fr )</li>
+                </ul>
+            </div>
+            <div class="row">
+
+                <div id="map"></div>
+
+            </div>
+        </div>
+
+    </div>
+    <!--CONTACTS BLOCK END-->
+
+    <!--CONTACT BLOCK START-->
+    <div class="contact-block">
+        <div class="container">
+            <div class="title line-title">
+                <span>Have a problem?</span>
+            </div>
+            <div class="row">
+                <div class="contact-img">
+                    <div class="col-md-3">
+                        <div class="row">
+                            <img src="img/man-for-contact-block-min.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <form action="">
+                    <div class="col-md-9 col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-4 wrap-input">
+                                <input class="input-style" name="name" type="text" placeholder="Name">
+                            </div>
+                            <div class="col-sm-4 wrap-input">
+                                <input class="input-style" name="phone" type="text" placeholder="Phone number">
+                            </div>
+                            <div class="col-sm-4 wrap-input">
+                                <select name="problem">
+                                    <option disabled selected style='display:none;'>Choose a problem</option>
+                                    <option>Problem 1</option>
+                                    <option>Problem 2</option>
+                                    <option>Problem 3</option>
+                                    <option>Problem 4</option>
+                                    <option>Problem 5</option>
+                                    <option>Problem 6</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 wrap-input">
+                                <textarea class="input-style" name="comment" id="" rows="4"
+                                          placeholder="Describe your problem"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 wrap-input">
+                                <div class="push-img">
+                                    <span class="push-img-title">Upload a photo</span>
+                                    <label class="upload-button">
+                                        <span class="blue-btn"><img src="img/push-img-icon-min.png" alt=""></span>
+                                        <span id="for-img">image-title <sup>*</sup></span>
+                                        <input type="file" name="photo" multiple accept="image/*,image/jpeg" id="img">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-8 wrap-input">
+                                <div class="print">
+                                    <span>Print a coupon with bonuse</span>
+                                    <a href="#" class="blue-btn">Print</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="default-btn default-red-btn">Send<img src="img/arrow-white.png" alt=""></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--CONTACT BLOCK END-->
+</main>
+<!--FOOTER START-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="footer-logo">
+                <div class="col-sm-3">
+                    <a href="#"><img src="img/footer-logo.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="col-sm-9">
+                <div class="footer-nav-menu">
+                    <div class="footer-about footer-block">
+                        <span class="footer-title">About</span>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Reviews</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-dotted"></div>
+                    <div class="footer-services footer-block">
+                        <span class="footer-title">Services</span>
+                        <ul>
+                            <li><a href="#">Dryers</a></li>
+                            <li><a href="#">Washers</a></li>
+                            <li><a href="#">Ovens</a></li>
+                            <li><a href="#">Ranges</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Cooktops</a></li>
+                            <li><a href="#">Dishwashers</a></li>
+                            <li><a href="#">Refrigerators</a></li>
+                            <li><a href="#">Freezers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-dotted"></div>
+                    <div class="footer-contacts footer-block">
+                        <span class="footer-title">Contact us</span>
+                        <ul>
+                            <li><a class="footer-tell" href="#">786-655-2507</a></li>
+                            <li><a href="#">23, Groove Street, New-York, USA</a></li>
+                            <li><a href="#">9:00 AM - 6:00 PM, (Mon - Fr)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<!--FOOTER END-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7lRtsgD1V6wsMGFuEF4y7DygLyCbNoqA">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/jquery.gmap.min.js"></script>
+<script src="js/libs.min.js"></script>
+</body>
+</html>
